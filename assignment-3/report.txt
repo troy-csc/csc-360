@@ -1,0 +1,24 @@
+Little Log File System
+By Tarush Roy
+VNum: V00883469
+
+# Disk
+Reading and Writing of blocks in one block chunks
+Size of block: 512 bytes
+Block status using bit map written out to disk
+
+# File System
+Block 0: Superblock
+	magic number
+	number of blocks
+	number of inodes
+
+Block 1: Free block vector
+	4096 bits to track free blocks
+
+Blocks 2-5: INODE Area
+	64 Inodes
+	32 bytes each
+
+Blocks 10-4095
+	Data blocks
