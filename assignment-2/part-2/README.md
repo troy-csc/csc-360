@@ -1,5 +1,4 @@
 Tarush Roy
-V00883469
 
 Threads are used to split work on calculating min sum of absolute residuals and the minimum
 
